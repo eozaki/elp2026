@@ -87,4 +87,21 @@ class ExpressionTest {
         assertFalse(email.matches("email@@example"))
         assertFalse(email.matches("email@example."))
     }
+
+    @Test
+    fun testNumSequence() {
+        assertTrue(seqNumbers.matches("3"))
+        assertTrue(seqNumbers.matches("3,2,1"))
+        assertTrue(seqNumbers.matches("3,2, 1"))
+        assertTrue(seqNumbers.matches("3, 2, 1"))
+        assertFalse(seqNumbers.matches("-3, 2, 1"))
+    }
+
+    @Test
+    fun testJsonSequence() {
+        assertTrue(jsonSequence.matches("[]"))
+        assertTrue(jsonSequence.matches("[1]"))
+        assertTrue(jsonSequence.matches("[1,-2,3.14]"))
+        assertTrue(jsonSequence.matches("[12.2,0,-2]"))
+    }
 }

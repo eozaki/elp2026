@@ -19,3 +19,7 @@ val internationalPhone = Regex("\\(\\+(\\d){1,3}\\)\\ *\\d{9,12}")
 val string = Regex("\".*\"")
 
 val email = Regex("[A-Z0-9a-z-_]+@([A-Z0-9a-z-_])+(\\.[a-z]+)*")
+
+val seqNumbers = Regex("[0-9]+(,( )?[0-9])*")
+
+val jsonSequence = Regex("\\[(${rationalNegativeNumber.pattern}|${rationalNegativeNumber.pattern}(,${rationalNegativeNumber})*)*]")
