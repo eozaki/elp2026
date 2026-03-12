@@ -1,0 +1,8 @@
+NUMBER=1
+OPERATION=2
+OPEN=3
+CLOSE=4
+SPACE=5
+'('=3
+')'=4
+' '=5
