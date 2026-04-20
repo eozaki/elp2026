@@ -13,6 +13,7 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test")
     implementation("org.junit.jupiter:junit-jupiter-api:5.10.0")
     implementation("org.antlr:antlr4:4.13.2")
+    implementation("org.ow2.asm:asm:9.4")
 }
 
 tasks.test {
